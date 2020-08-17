@@ -1,4 +1,7 @@
 module.exports = {
-  publicPath: "/infovis",
-  outputDir: "docs"
-};
+  "publicPath": "/infovis",
+  "outputDir": "docs",
+  "transpileDependencies": [
+    "vuetify"
+  ]
+}
