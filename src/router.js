@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Viz from './views/Viz.vue'
+import Error404 from './components/404.vue'
 
 Vue.use(Router)
 
@@ -25,12 +25,12 @@ export default new Router({
     {
       path: '/viz/:vizId',
       name: 'viz',
-      component: Viz
+      component: () => import('./views/Viz.vue')
     },
     {
       path: '/*',
       name: '404',
-      component: () => import('./components/404.vue')
+      component: Error404
     }
   ]
 })

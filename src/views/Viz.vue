@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="id() !== undefined && id()!== null">
-      <h1>{{ id().name }}</h1>
+      <h1>{{ id().title }}</h1>
       <div ref="tableau"></div>
     </div>
 
