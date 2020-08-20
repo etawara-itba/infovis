@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import vizList from "./vizList";
+import data from "./data";
 
 export default {
   name: "App",
@@ -101,7 +101,7 @@ export default {
     },
 
     getVizList: function () {
-      return vizList.VIZ_LIST;
+      return data.VIZ_LIST;
     },
   },
 };

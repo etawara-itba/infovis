@@ -1,7 +1,9 @@
 <template>
   <div>
     <div v-if="id() !== undefined && id()!== null">
-      <h1>{{ id().title }}</h1>
+      <div>
+        <h1>{{ id().title }}</h1>
+      </div>
       <div ref="tableau" :key="id().path"></div>
     </div>
 
@@ -15,14 +17,14 @@
 <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 <script>
 import error404 from "../components/404.vue";
-import vizList from "../vizList";
+import data from "../data";
 
 export default {
   name: "Viz",
 
   methods: {
     getVizList: function () {
-      return vizList.VIZ_LIST;
+      return data.VIZ_LIST;
     },
 
     id: function () {
@@ -46,17 +48,17 @@ export default {
     this.initViz();
   },
 
-  updated: function() {
+  updated: function () {
     this.initViz();
   },
-
 
   data() {
     return {
       options: {
         hideTabs: true,
-        width: "1200px",
-        height: "800px",
+        width: "100%",
+        // TODO - modify the size of the containing div, instead of using vh here
+        height: "85vh",
       },
     };
   },

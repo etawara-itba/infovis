@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-img src="https://httpstatusdogs.com/img/404.jpg"/>
+        <v-img src="../assets/404.jpg"/>
         <p>
             This image belongs to 
             <a href="https://httpstatusdogs.com/">http status dogs</a>
