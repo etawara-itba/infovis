@@ -1,6 +1,12 @@
 export default {
     VIZ_LIST: [
         {
+            title: 'InfoVis 2020/W35: Indian batsmen v left-arm pace',
+            path: '2020W35',
+            name: 'MM 2020 - Week 35',
+            url: 'https://public.tableau.com/views/InfoVis2020W35Indianbatsmenvleft-armpace/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link'
+        },
+        {
             title: 'InfoVis 2020/W34: Sexual and Reproductive Health and Rights (SRHR)',
             path: '2020W34',
             name: 'MM 2020 - Week 34',
