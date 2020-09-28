@@ -4,7 +4,7 @@ export default {
             title: 'InfoVis: Personal Data Assignment',
             path: 'PDA',
             name: 'Personal Data Assignment',
-            url: 'https://public.tableau.com/views/PersonalDataAssignment/Dashboard1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link'
+            url: 'https://public.tableau.com/views/PersonalDataAssignment/Story1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link'
         },
         {
             title: 'InfoVis 2020/W35: Indian batsmen v left-arm pace',
